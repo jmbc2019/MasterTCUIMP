@@ -271,6 +271,16 @@ if __name__ == '__main__':
         'beta_2': data_beta_02,
         'beta_3': data_beta_03,
     }
+
+    # Saving datasets in files
+    np.savetxt('data_normal_01.txt', data_normal_01)
+    np.savetxt('data_normal_02.txt', data_normal_02)
+    np.savetxt('data_normal_03.txt', data_normal_03)
+    np.savetxt('data_uniform_01.txt', data_uniform_01)
+    np.savetxt('data_beta_01.txt', data_beta_01)
+    np.savetxt('data_beta_02.txt', data_beta_02)
+    np.savetxt('data_beta_03.txt', data_beta_03)
+
     param_dict_1 = {
         'mu_1': mu_n_1, 'sigma_1': sigma_n_1, 'mu_2': mu_n_2, 'sigma_2': sigma_n_2, 'mu_3': mu_n_3,
         'sigma_3': sigma_n_3,
